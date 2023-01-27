@@ -6,7 +6,7 @@ name: 'trial_dbt'
 version: '1.0.0'
 config-version: 2
 
-# This setting configures which "profile" dbt uses for this project.
+# This setting configures which "profile" dbt uses for this project.packages-install-path: '../dbt_packages'
 profile: 'trial_dbt'
 
 # These configurations specify where dbt should look for different types of files.
@@ -24,6 +24,8 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+
+packages-install-path: '../dbt_packages'
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
